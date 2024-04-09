@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="title">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Help us to get more information!</p>
+    </div>
+    <form action="" id="survey-form" method="post">
+        <fieldset>
+                <label for="name" id="name-label">Name
+                <input type="text" name="name" id="name" placeholder="Enter your name" required /></label>
+                <label for="email" id="email-label">E-mail
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail" required /></label>
+                <label for="number" id="number-label">Age
+                <input type="number" name="age" id="number" min="12" max="100" placeholder="Enter your age (optional)"></label>
+                <label for="dropdown">Gender
+                    <select name="options" id="dropdown">
+                        <option value="">--Select an option--</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Other</option>
+                    </select>
+                </label>
+            <p>Are you interested in making part of the team?</p>
+                <label for="yes">
+                    <input type="radio" name="option" id="" value="yes" class="inline" checked>Yes
+                </label>
+                <label for="no">
+                    <input type="radio" name="option" id="" value="no" class="inline">No
+                </label>
+                <p>What programming languages do you know?</p>
+                <label for="c"><input type="checkbox" name="language" value="c" id="" class="inline">C</label>
+                <label for="csharp"><input type="checkbox" name="language" value="csharp" id="" class="inline">C#</label>
+                <label for="python"><input type="checkbox" name="language" value="python" id="" class="inline">Python</label>
+                <label for="java"><input type="checkbox" name="language" value="java" id="" class="inline">Java</label>
+                <label for="javascript"><input type="checkbox" name="language" value="javascript" id="" class="inline">Javascript</label>
+                <label for="php"><input type="checkbox" name="language" value="php" id="" class="inline">PHP</label>
+                <label for="node"><input type="checkbox" name="language" value="node" id="" class="inline">Node.js</label>
+                <label for="react"><input type="checkbox" name="language" value="react" id="" class="inline">React</label>
+                <p>Describe yourself a little for us</p>
+                <textarea name="resume" id="resume" cols="50" rows="10" placeholder="Insert your resume here"></textarea>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
